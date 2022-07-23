@@ -337,6 +337,7 @@ template {
 }
 
 body {
+  overflow-x: hidden;
   background-image: url("../images/hero_bg.webp");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -373,6 +374,7 @@ img {
 .site-header {
   padding-top: 20px;
   padding-bottom: 100px;
+  overflow: hidden;
 }
 
 .header__navbar {
@@ -545,6 +547,54 @@ img {
   text-shadow: 0 0 2px blue;
 }
 
+.sctiky {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.basic-sctiky {
+  padding: 15px 0;
+  width: 100%;
+  background-color: #A8D1DF;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+}
+
+.sticky__list {
+  display: flex;
+  align-items: center;
+}
+
+.sticky__mobile {
+  margin-bottom: 10px;
+}
+
+.sticky__tel, .sticky__mobile {
+  display: flex;
+  align-items: center;
+}
+
+.sticky__teles {
+  text-decoration: none;
+  margin-left: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 956px) {
+  .sctiky__logo-link {
+    display: none;
+  }
+  .sctiky__item + .sctiky__item {
+    margin-left: 10px;
+    border-left: 2px solid #111;
+    padding-left: 10px;
+  }
+}
 @media only screen and (max-width: 810px) {
   .nav__list {
     display: none;
@@ -555,6 +605,18 @@ img {
   .header__navbar {
     justify-content: space-between;
     align-items: center;
+  }
+}
+@media only screen and (max-width: 794px) {
+  .sticky__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sctiky__item > a {
+    font-size: 18px;
+  }
+  .sticky__tel, .sticky__mobile {
+    font-size: 12px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -587,6 +649,7 @@ img {
 .hero-section {
   padding: 40px 0;
   background: #fff;
+  overflow-x: hidden;
 }
 
 .hero {
@@ -791,6 +854,7 @@ img {
   overflow-y: hidden;
   position: relative;
   padding-bottom: 40px;
+  overflow-x: hidden;
 }
 
 .drop-wrapper {
@@ -1098,6 +1162,10 @@ img {
 .swiper-slide > img {
   width: 100%;
   height: 500px;
+}
+
+.mySwiper {
+  overflow: hidden !important;
 }
 
 .swiper {
