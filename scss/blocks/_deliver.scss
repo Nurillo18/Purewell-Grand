@@ -1,0 +1,138 @@
+
+
+.deliver-section {
+    padding: 80px 0;
+    position: relative;
+    background-color: #333;
+    background-size: 100%;
+}
+.deliver-section::before {
+    content: '';
+    position: absolute;
+    background-image: url("../images/diliver.png");
+    background-repeat: no-repeat;
+    background-position:center;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 500px;
+    height: 100%;
+    top: 0;
+    right: 220px;
+    background-size: 100%;
+}
+.deliver-shadow{
+    width: 100%;
+    height: 100%;
+
+}
+.deliver-wrpper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.deliver-content{
+    width: 40%;
+}
+.deliver-content > h2 {
+    font-weight: 700;
+    color: antiquewhite;
+    font-size: 35px;
+
+}
+.deliver__btn {
+    text-align: center;
+    background-color: #fff;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 7px;
+    padding: 8px 10px;
+    width: 180px;
+    border: none;
+    display: inline-block;
+    font-weight: 700;
+}
+.deliver__btn::before{
+    z-index: -2;
+    position: absolute;
+    border-radius:7px;
+    top: 0;
+    left: -100%;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #DE4138;
+    transition: all 0.4s;
+
+}
+.deliver__btn:hover::before{
+    left: 0;
+}
+.deliver__btn:hover{
+    color: #fff;
+}
+
+@media only screen and (max-width:1083px) {
+    .deliver-section{
+        overflow-y: hidden;
+        padding: 30px 0 300px 0;
+        z-index: 1;
+        width: 100%;
+        text-align: center;
+        overflow-x: hidden;
+    }
+    .deliver-section::before{
+        right: 0;
+        margin: 0 auto;
+        left: 0;
+        top: 131px;
+    }
+    .deliver-content{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:500px) {
+    .deliver-section::before{
+        right: 0;
+        margin: 0 auto;
+        left: 0;
+        top: 131px;
+        background-position: center;
+        background-size: 100%;
+        width: auto;
+        height: auto;
+    }
+    .deliver-content > h2 {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width:450px) {
+    .deliver-section::before{
+        top: 250px;
+    }
+
+}
+@media only screen and (max-width:370px) {
+    .deliver-section::before{
+        top: 280px;
+    }
+
+    .deliver-content > h2 {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:350px) {
+    .deliver-section::before{
+        top: 300px;
+    }
+
+}
+@media only screen and (max-width:285px) {
+    .deliver-section::before{
+        top: 500px;
+    }
+
+}
