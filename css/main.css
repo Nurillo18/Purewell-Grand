@@ -1174,6 +1174,7 @@ img {
   }
   .swiper-slide > img {
     height: 200px;
+    width: 120%;
   }
   .swiper {
     padding: 20px 0 50px 0 !important;
